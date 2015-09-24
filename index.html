@@ -32,16 +32,33 @@
 		a:hover{
 			text-decoration:underline;
 		}
-		
-		
+		html, body {height: 100%;}
+		#wrap {min-height: 100%;
+		 margin-top: 0px;}
+
+#main {overflow:auto;
+	padding-bottom: 20px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -20; /* negative value of footer height */
+	clear:both;
+	background: #336699;
+	width: 100%;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #202020} 
+	address {
+font-size : 20px; 
+text-align : center; 
+color: #efefef;
+padding: 1% 0;
+text-shadow: 1px 1px 0px #202020
+}		
 	</style>
-			
-
-
-	
-	
 	</head>
-
+	
+	
+<div id="wrap">
+	<div id="main">
 <body>
 <a href="index.html"><img border=top:0px; src="images/Logo.png"></a>
 	<ul id="nav">
@@ -53,10 +70,8 @@
 		<li><a href="contact.html"><img border=top:0px; src="images/Contact.png"></a></li>
 		
 	</ul>
-   <div>
    <br><br>
    <h1 align=left><font color = "black"><u><b>About me</b></u></font></h1>
-<div>
 <table style="width:100%">
   <tr>
     <td>I am currently doing my batchelors degree in computer games development in the University of Limerick<br>
@@ -66,5 +81,9 @@ The languages and tools that I have used and my skill level can also be found un
     <td><img border=top:0px; src="images/me.jpg"></td>
   </tr>
 </table>
-</div>
 	</body>
+	</div>
+</div>
+<div id="footer">
+<address>Created by Cathal lenihan</address>
+</div>

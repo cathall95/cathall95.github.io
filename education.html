@@ -50,16 +50,32 @@
 		width:960;
 		color:black;
 		}
-		
-		
+		html, body {height: 100%;}
+		#wrap {min-height: 100%;
+		 margin-top: 0px;}
+
+#main {overflow:auto;
+	padding-bottom: 20px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -20; /* negative value of footer height */
+	clear:both;
+	background: #336699;
+	width: 100%;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #202020} 
+	address {
+font-size : 20px; 
+text-align : center; 
+color: #efefef;
+padding: 1% 0;
+text-shadow: 1px 1px 0px #202020
+}		
 	</style>
-			
-
-
-	
-	
 	</head>
 
+	<div id="wrap">
+	<div id="main">
 <body>
 <a href="index.html"><img border=top:0px; src="images/Logo.png"></a>
 	<ul id="nav">
@@ -273,3 +289,8 @@ The modules I have studied so far and the grades I have received in them are:<br
 </table>
 </div>
 	</body>
+	</div>
+</div>
+<div id="footer">
+<address>Created by Cathal lenihan</address>
+</div>
