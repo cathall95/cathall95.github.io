@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Cathal Lenihan - Software engineer</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Cathal Lenihan personal website">
+		<link href="grid.css" media="screen" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+			
+	
+			body	{background-repeat: no-repeat; background-color:#BDBDBD; background-attachment:fixed; height:100%; width: 100%; background-position: center; width:1080px; padding:0px 0; margin:0 auto; font-family:Calibri, sans-serif;}
+		#nav{
+			border:1px solid #515151;
+			border-width:1px 0;
+			list-style:none;
+			margin:0;
+			padding:0;
+			text-align:center;
+		}
+		#nav li{
+			display:inline;
+		}
+		#nav a{
+			display:inline-block;
+			padding:10px;
+		}
+		a{
+			color:#c00;
+			text-decoration:none;
+			font-weight:bold;
+		}
+		a:hover{
+			text-decoration:underline;
+		}
+		html, body {height: 100%;}
+		#wrap {min-height: 100%;
+		 margin-top: 0px;}
+
+#main {overflow:auto;
+	padding-bottom: 20px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -20; /* negative value of footer height */
+	clear:both;
+	background: #336699;
+	width: 100%;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #202020} 
+	address {
+font-size : 20px; 
+text-align : center; 
+color: #efefef;
+padding: 1% 0;
+text-shadow: 1px 1px 0px #202020
+}		
+	</style>
+	</head>
+	
+	
+<div id="wrap">
+	<div id="main">
+<body>
+<a href="index.html"><img border=top:0px; src="images/Logo.png"></a>
+	<ul id="nav">
+	
+		<li><a href="index.html"><img border=top:0px; src="images/home.png"></a></li>
+		<li><a href="portfolio.html"><img border=top:0px; src="images/Portfolio.png"></a></li>
+		<li><a href="education.html"><img border=top:0px; src="images/Education.png"></a></li>
+		<li><a href="experience.html"><img border=top:0px; src="images/experience.png"></a></li>
+		<li><a href="contact.html"><img border=top:0px; src="images/Contact.png"></a></li>
+		
+	</ul>
+   <br><br>
+   <h1 align=left><font color = "black"><u><b><center>Conference Track Management</center></b></u></font></h1>
+   <table style="width:100%">
+  <tr>
+    <td>The java source code - <a href="ConferenceTrackManagement.java" target="_blank">ConferenceTrackManagement.java</a></td>
+    <td>The test input file - <a href="testinput.txt" target="_blank">testinput.txt</a></td>
+  </tr>
+</table>
+	<p style = "color:black"><br><br><br>This program is written using java. The ui is done with a Jframe.<br> 
+	It just requires the file ConferenceTrackManagement.java and the input file to run.<br><br>
+The input file is specified in the computeResult() method which is the first method under main. <br>
+It is at the start of that method on this line: inputText = readFile("testinput.txt");<br><br>
+It is compiled at the command prompt with javac ConferenceTrackManagement.java .<br> It is executed at the command prompt with java ConferenceTrackManagement .<br><br>
+The program works by reading in the file and storing it as a string. It then seperates this string into a string array where each line of the file has its own index.<br>
+ It then seperates the title and time of each line into two arrays. It then sorts these arrays using bubblesort based on the time from shortest to longest. <br>
+ It then fills the morning and evening sessions for each track. As it fills each session it displays the result to a text area contained in the jframe. It also removes the scheduled elements as it goes.<br><br></p>
+ <table style="width:100%">
+  <tr>
+    <td><b>Screenshot of command prompt for running and compiling program</b></td>
+    <td><b>Screenshot of the programs output</b></td>
+  </tr>
+</table>
+<table style="width:100%">
+  <tr>
+    <td><img border=top:0px; src="images/conferenceCompile.png"></td>
+    <td><img border=top:0px; src="images/conferenceOutput.png"></td>
+  </tr>
+</table>
+	</body>
+	</div>
+</div>
+<div id="footer">
+<address>Created by Cathal lenihan</address>
+</div>
